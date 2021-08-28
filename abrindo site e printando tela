@@ -1,0 +1,16 @@
+import pyautogui
+import time
+
+pyautogui.alert("O código vai começar. Não utilize nada do computador até o código finalizar!")
+pyautogui.PAUSE = 0.5
+
+# Abrir o módulo auxiliar no chrome
+pyautogui.press('winleft')
+pyautogui.write('chrome')
+pyautogui.press('enter')
+#time.sleep(1)
+pyautogui.write('https://brf-app-iuris-qas.azurewebsites.net/')
+pyautogui.press('enter')
+pyautogui.press('prntscrn')
+
+pyautogui.alert("O código foi finalizado. Você já pode utilizar o computador!")
